@@ -1,0 +1,94 @@
+body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }  
+
+  .center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+  
+
+  .form-signin{
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  form{
+    padding: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  div.pure-form-aligned.stacked-confirm-password {
+    width:auto;
+    }
+  
+  button{
+    background-image: linear-gradient(#51a9ee,#147bcd);
+    border-color: #1482d0;
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    background-color: #0070c9;
+    background: linear-gradient(#42a1ec,#0070c9);
+    border: 1px solid #07c;
+  }
+  #message {
+    display:none;
+    color: #000;
+    position: relative;
+    left: 30%;
+    margin-top: 10px;
+    }
+    
+    #message p {
+      padding: 10px 35px;
+      font-size: 18px;
+      }
+      
+      .valid {
+        color: #0070c9;
+        }
+        
+        .valid:before {
+          position: relative;
+          left: -35px;
+          content: "✔"
+          }
+          
+          .invalid {
+            color: red;
+            }
+            
+            .invalid:before {
+              position: relative;
+              left: -35px;
+              content: "✖";
+              }
