@@ -1,4 +1,4 @@
-const URL = "https://teachablemachine.withgoogle.com/models/qp3f1jkqq/";
+const URL = "https://cdn.jsdelivr.net/gh/Megaman222111/standup-css/";
             let model, webcam, labelContainer, maxPredictions;
             async function init() {
                 const modelURL = URL + "model.json";
