@@ -31,11 +31,11 @@ const URL = "https://cdn.jsdelivr.net/gh/Megaman222111/standup-css/";
                 for (let i = 0; i < maxPredictions; i++) {
                     if (prediction[0].probability.toFixed(2) >= 0.501){
                         var a=document.getElementById('final_result').innerHTML = "Sitting";
-                        z="Sitting"
+                        var z="Sitting"
                     }
                     else{
                         var a=document.getElementById('final_result').innerHTML = "Standing";
-                        z="Standing"
+                        var z="Standing"
                     }
                 }
                 }
