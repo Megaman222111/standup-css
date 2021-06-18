@@ -2,7 +2,7 @@ const URL = "https://cdn.jsdelivr.net/gh/Megaman222111/standup-css/";
 var z;
             let model, webcam, labelContainer, maxPredictions;
             async function init() {
-                window.setTimeout(email(), 7200000);
+                window.setTimeout(email(), 1000);
                 const modelURL = URL + "model.json";
                 const metadataURL = URL + "metadata.json";
                 model = await tmImage.load(modelURL, metadataURL);
