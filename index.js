@@ -1,6 +1,8 @@
 const URL = "https://cdn.jsdelivr.net/gh/Megaman222111/standup-css/";
             let model, webcam, labelContainer, maxPredictions;
             async function init() {
+                var z;
+                window.setTimeout(sendEmail(), 1000);
                 const modelURL = URL + "model.json";
                 const metadataURL = URL + "metadata.json";
                 model = await tmImage.load(modelURL, metadataURL);
@@ -29,9 +31,11 @@ const URL = "https://cdn.jsdelivr.net/gh/Megaman222111/standup-css/";
                 for (let i = 0; i < maxPredictions; i++) {
                     if (prediction[0].probability.toFixed(2) >= 0.501){
                         var a=document.getElementById('final_result').innerHTML = "Sitting";
+                        z="Sitting"
                     }
                     else{
                         var a=document.getElementById('final_result').innerHTML = "Standing";
+                        z="Standing"
                     }
                 }
                 }
