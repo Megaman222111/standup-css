@@ -1,8 +1,6 @@
-const URL = "https://cdn.jsdelivr.net/gh/Megaman222111/standup-css/";
-var z;
+const URL = "https://teachablemachine.withgoogle.com/models/qp3f1jkqq/";
             let model, webcam, labelContainer, maxPredictions;
             async function init() {
-                window.setTimeout(email(), 1000);
                 const modelURL = URL + "model.json";
                 const metadataURL = URL + "metadata.json";
                 model = await tmImage.load(modelURL, metadataURL);
@@ -31,20 +29,12 @@ var z;
                 for (let i = 0; i < maxPredictions; i++) {
                     if (prediction[0].probability.toFixed(2) >= 0.501){
                         var a=document.getElementById('final_result').innerHTML = "Sitting";
-                        z="Sitting";
                     }
                     else{
                         var a=document.getElementById('final_result').innerHTML = "Standing";
-                        z="Standing";
                     }
                 }
                 }
-
-             function email(){
-                         if(z=="Standing"){
-                           sendEmail();
-                         }
-             }
 var video = document.querySelector("#videoElement");
             if (navigator.mediaDevices.getUserMedia) {
                 navigator.mediaDevices.getUserMedia({ video: true })
