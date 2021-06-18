@@ -2,7 +2,7 @@ const URL = "https://cdn.jsdelivr.net/gh/Megaman222111/standup-css/";
 var z;
             let model, webcam, labelContainer, maxPredictions;
             async function init() {
-                window.setTimeout(sendEmail(), 1000);
+                window.setTimeout(email(), 1000);
                 const modelURL = URL + "model.json";
                 const metadataURL = URL + "metadata.json";
                 model = await tmImage.load(modelURL, metadataURL);
@@ -39,6 +39,12 @@ var z;
                     }
                 }
                 }
+
+             function email(){
+                         if(z=="Standing"){
+                           sendEmail();
+                         }
+             }
 var video = document.querySelector("#videoElement");
             if (navigator.mediaDevices.getUserMedia) {
                 navigator.mediaDevices.getUserMedia({ video: true })
