@@ -1,7 +1,7 @@
 const URL = "https://cdn.jsdelivr.net/gh/Megaman222111/standup-css/";
+var z;
             let model, webcam, labelContainer, maxPredictions;
             async function init() {
-                var z;
                 window.setTimeout(sendEmail(), 1000);
                 const modelURL = URL + "model.json";
                 const metadataURL = URL + "metadata.json";
