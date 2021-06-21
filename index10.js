@@ -53,7 +53,7 @@ var y = 0;
                 window.setInterval(function(){
                     if(z=="Sitting"){
                         y = y+1;
-                        document.getElementById("counter").innerHTML = a;
+                        document.getElementById("counter").innerHTML = y;
                     }
 
                     if(z=="Standing"){
@@ -69,7 +69,7 @@ var y = 0;
                   }, 1000);
                   function sendemail(){
                   Email.send({
-                    SecureToken : "055ed0bf-0df3-4337-823e-7b34ec6e9187",
+                    SecureToken : "b7383dd1-6923-42cb-bd40-a20d81aef6d1",
                     To : a,
                     From : "stand-up@stand-up.a2hosted.com",
                     Subject : "This is the subject",
@@ -87,5 +87,4 @@ var video = document.querySelector("#videoElement");
                 .catch(function (err0r) {
                     console.log("Something went wrong!");
                 });
-            }
             }
