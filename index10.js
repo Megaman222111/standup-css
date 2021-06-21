@@ -53,7 +53,7 @@ var y = 0;
                 window.setInterval(function(){
                     if(z=="Sitting"){
                         y = y+1;
-                        document.getElementById("counter").innerHTML = y;
+                        document.getElementById("counter").innerHTML = a;
                     }
 
                     if(z=="Standing"){
@@ -67,7 +67,6 @@ var y = 0;
                         sendemail();
                     }
                   }, 1000);
-
                   function sendemail(){
                   Email.send({
                     SecureToken : "055ed0bf-0df3-4337-823e-7b34ec6e9187",
@@ -88,4 +87,5 @@ var video = document.querySelector("#videoElement");
                 .catch(function (err0r) {
                     console.log("Something went wrong!");
                 });
+            }
             }
