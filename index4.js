@@ -47,7 +47,6 @@ var y = 0;
                     if(z==="Sitting"){
                         y= y+1;
                         document.getElementById("counter").innerHTML = y;
-                        window.location(url);
                     }
                 }
 
@@ -55,7 +54,6 @@ var y = 0;
                     if(z=="Sitting"){
                         y = y+1;
                         document.getElementById("counter").innerHTML = y;
-                        sendemail();
                     }
 
                     if(z=="Standing"){
@@ -64,13 +62,16 @@ var y = 0;
                     }
 
                     if(y==7200){
+                        y= 0;
+                        document.getElementById("counter").innerHTML = y;
+                        sendemail();
                     }
                   }, 1000);
 
                   function sendemail(){
                   Email.send({
                     SecureToken : "055ed0bf-0df3-4337-823e-7b34ec6e9187",
-                    To : 'mmistry169@gmail.com',
+                    To : a,
                     From : "stand-up@stand-up.a2hosted.com",
                     Subject : "This is the subject",
                     Body : "And this is the body"
