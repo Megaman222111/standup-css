@@ -54,7 +54,6 @@ var y = 0;
                     if(z=="Sitting"){
                         y = y+1;
                         document.getElementById("counter").innerHTML = y;
-                        sendemail();
                     }
 
                     if(z=="Standing"){
