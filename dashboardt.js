@@ -47,7 +47,6 @@ var y = 0;
                     if(z==="Sitting"){
                         y= y+1;
                         document.getElementById("counter").innerHTML = y;
-                        window.location(a);
                     }
                 }
 
@@ -62,8 +61,6 @@ var y = 0;
                         document.getElementById("counter").innerHTML = y;
                     }
 
-                    if(y==7200){
-                    }
                   }, 1000);
 var video = document.querySelector("#videoElement");
             if (navigator.mediaDevices.getUserMedia) {
