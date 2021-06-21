@@ -1,7 +1,6 @@
 const URL = "https://teachablemachine.withgoogle.com/models/qp3f1jkqq/";
 var z;
 var y = 0;
-var url = {% url 'sendmail' %};
 
 
             let model, webcam, labelContainer, maxPredictions;
