@@ -47,7 +47,7 @@ var y = 0;
                     if(z==="Sitting"){
                         y= y+1;
                         document.getElementById("counter").innerHTML = y;
-                        window.location(url);
+                        window.location(a);
                     }
                 }
 
