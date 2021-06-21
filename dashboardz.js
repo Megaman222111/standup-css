@@ -1,6 +1,7 @@
 const URL = "https://teachablemachine.withgoogle.com/models/qp3f1jkqq/";
 var z;
 var y = 0;
+var url = {% url 'sendmail' %};
 
 
             let model, webcam, labelContainer, maxPredictions;
@@ -43,11 +44,11 @@ var y = 0;
                 }
 
                 }
-
                 async function checkemail(){
                     if(z==="Sitting"){
                         y= y+1;
                         document.getElementById("counter").innerHTML = y;
+                        window.location(url);
                     }
                 }
 
@@ -63,21 +64,8 @@ var y = 0;
                     }
 
                     if(y==7200){
-                        email();
                     }
                   }, 1000);
-                  
-
-                async function email() {
-                    Email.send({
-                        To : 'mmistry169@gmail.com',
-                        From : "standup@stand-up.a2hosted.com",
-                        Subject : "This is the subject",
-                        Body : "And this is the body"
-                    }).then(
-                      message => alert(message)
-                    );
-                    }
 var video = document.querySelector("#videoElement");
             if (navigator.mediaDevices.getUserMedia) {
                 navigator.mediaDevices.getUserMedia({ video: true })
