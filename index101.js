@@ -73,7 +73,7 @@ var z;
                   function sendemail(){
                   Email.send({
                     SecureToken : "0bebc91d-41f4-400c-8424-683f10fd8be4",
-                    To : 'mmistry169@gmail.com',
+                    To : a,
                     From : "stand-up@stand-up.ca",
                     Subject : "This is the subject",
                     Body : "And this is the body"
