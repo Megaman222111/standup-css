@@ -1,6 +1,9 @@
 const URL = "https://teachablemachine.withgoogle.com/models/qp3f1jkqq/";
-var z;
+var b = 0;
+var c = 0;
+var d = 0;
 var y = 0;
+var z;
 
 
             let model, webcam, labelContainer, maxPredictions;
@@ -43,35 +46,36 @@ var y = 0;
                 }
 
                 }
-                async function checkemail(){
-                    if(z==="Sitting"){
-                        y= y+1;
-                        document.getElementById("counter").innerHTML = y;
-                    }
-                }
 
                 window.setInterval(function(){
                     if(z=="Sitting"){
                         y = y+1;
+                        b = b+1;
                         document.getElementById("counter").innerHTML = y;
+                        document.getElementById("sitting-counter").innerHTML = b;
+                        sendemail();
                     }
 
                     if(z=="Standing"){
                         y = 0;
+                        c = c+1;
                         document.getElementById("counter").innerHTML = y;
+                        document.getElementById("standing-counter").innerHTML = c;
                     }
 
                     if(y==7200){
                         y= 0;
                         document.getElementById("counter").innerHTML = y;
+                        document.getElementById("time-sitting-counter").innerHTML = b;
+                        document.getElementById("standing-counter").innerHTML = c;
                         sendemail();
                     }
                   }, 1000);
                   function sendemail(){
                   Email.send({
-                    SecureToken : "b7383dd1-6923-42cb-bd40-a20d81aef6d1",
+                    SecureToken : "cea990e6-5c49-4286-888a-1f57f91d3b12",
                     To : a,
-                    From : "stand-up@stand-up.a2hosted.com",
+                    From : "stand-up@stand-up.ca",
                     Subject : "This is the subject",
                     Body : "And this is the body"
                 }).then(
