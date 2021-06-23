@@ -53,7 +53,6 @@ var z;
                         b = b+1;
                         document.getElementById("counter").innerHTML = y;
                         document.getElementById("sitting-counter").innerHTML = b;
-                        sendemail();
                     }
 
                     if(z=="Standing"){
@@ -73,13 +72,13 @@ var z;
                   }, 1000);
                   function sendemail(){
                   Email.send({
-                    SecureToken : "cea990e6-5c49-4286-888a-1f57f91d3b12",
-                    To : a,
+                    SecureToken : "0bebc91d-41f4-400c-8424-683f10fd8be4",
+                    To : 'mmistry169@gmail.com',
                     From : "stand-up@stand-up.ca",
                     Subject : "This is the subject",
                     Body : "And this is the body"
                 }).then(
-                  message => alert(message)
+                  message => alert("It has been 2 hours, time to get up!")
                 );
             }
 var video = document.querySelector("#videoElement");
