@@ -1,5 +1,4 @@
 const URL = "https://teachablemachine.withgoogle.com/models/qp3f1jkqq/";
-var a = "{{user.email}}";
 var b = 0;
 var c = 0;
 var d = 0;
