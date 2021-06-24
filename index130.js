@@ -80,11 +80,6 @@ var z;
                 }).then(
                   message => alert("It has been 2 hours, time to get up!")
                 );
-
-                function play() {
-                    var audio = new Audio('https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3');
-                    audio.play();
-                  }
             }
 var video = document.querySelector("#videoElement");
             if (navigator.mediaDevices.getUserMedia) {
