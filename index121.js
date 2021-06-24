@@ -2,7 +2,6 @@ const URL = "https://teachablemachine.withgoogle.com/models/qp3f1jkqq/";
 var b = 0;
 var c = 0;
 var d = 0;
-var e = parseInt(document.getElementById().value);
 var y = 0;
 var z;
 
