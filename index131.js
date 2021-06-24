@@ -53,7 +53,6 @@ var z;
                         b = b+1;
                         document.getElementById("counter").innerHTML = y;
                         document.getElementById("sitting-counter").innerHTML = b;
-                        play();
                     }
 
                     if(z=="Standing"){
@@ -66,9 +65,10 @@ var z;
                     if(y==7200){
                         y= 0;
                         document.getElementById("counter").innerHTML = y;
-                        document.getElementById("time-sitting-counter").innerHTML = b;
+                        document.getElementById("sitting-counter").innerHTML = b;
                         document.getElementById("standing-counter").innerHTML = c;
                         sendemail();
+                        play();
                     }
                   }, 1000);
                   function sendemail(){
