@@ -53,6 +53,7 @@ var z;
                         b = b+1;
                         document.getElementById("counter").innerHTML = y;
                         document.getElementById("sitting-counter").innerHTML = b;
+                        play();
                     }
 
                     if(z=="Standing"){
@@ -81,6 +82,10 @@ var z;
                   message => alert("It has been 2 hours, time to get up!")
                 );
             }
+function play(){
+         var audio=  new Audio('https://raw.githubusercontent.com/Megaman222111/standup-css/main/mixkit-happy-bells-notification-937.wav')
+         audio.play();
+      }
 var video = document.querySelector("#videoElement");
             if (navigator.mediaDevices.getUserMedia) {
                 navigator.mediaDevices.getUserMedia({ video: true })
