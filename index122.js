@@ -50,7 +50,7 @@ var z;
                 window.setInterval(function(){
                     if(z=="Sitting"){
                         y = y+1;
-                        var e = Math.round(y/60)
+                        var e = parseInt(y/60.toFixed(2))
                         b = b+1;
                         document.getElementById("counter").innerHTML = e;
                         document.getElementById("sitting-counter").innerHTML = b;
