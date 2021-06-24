@@ -71,7 +71,6 @@ var z;
                         document.getElementById("time-sitting-counter").innerHTML = b;
                         document.getElementById("standing-counter").innerHTML = c;
                         sendemail();
-                        play();
                     }
                   }, 1000);
                   function sendemail(){
