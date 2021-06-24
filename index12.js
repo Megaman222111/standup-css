@@ -2,6 +2,7 @@ const URL = "https://teachablemachine.withgoogle.com/models/qp3f1jkqq/";
 var b = 0;
 var c = 0;
 var d = 0;
+var e = parseInt(document.getElementById().value);
 var y = 0;
 var z;
 
@@ -50,6 +51,7 @@ var z;
                 window.setInterval(function(){
                     if(z=="Sitting"){
                         y = y+1;
+                        y = y/60
                         b = b+1;
                         document.getElementById("counter").innerHTML = y;
                         document.getElementById("sitting-counter").innerHTML = b;
@@ -57,17 +59,20 @@ var z;
 
                     if(z=="Standing"){
                         y = 0;
+                        y = y/60
                         c = c+1;
                         document.getElementById("counter").innerHTML = y;
                         document.getElementById("standing-counter").innerHTML = c;
                     }
 
-                    if(y==7200){
+                    if(y==e){
                         y= 0;
+                        y = y/60
                         document.getElementById("counter").innerHTML = y;
                         document.getElementById("time-sitting-counter").innerHTML = b;
                         document.getElementById("standing-counter").innerHTML = c;
                         sendemail();
+                        play();
                     }
                   }, 1000);
                   function sendemail(){
@@ -80,6 +85,11 @@ var z;
                 }).then(
                   message => alert("It has been 2 hours, time to get up!")
                 );
+
+                function play() {
+                    var audio = new Audio('https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3');
+                    audio.play();
+                  }
             }
 var video = document.querySelector("#videoElement");
             if (navigator.mediaDevices.getUserMedia) {
