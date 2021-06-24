@@ -50,21 +50,20 @@ var z;
                 window.setInterval(function(){
                     if(z=="Sitting"){
                         y = y+1;
-                        y = y/60
+                        var e= Math.round(y/60)
                         b = b+1;
-                        document.getElementById("counter").innerHTML = y;
+                        document.getElementById("counter").innerHTML = e;
                         document.getElementById("sitting-counter").innerHTML = b;
                     }
 
                     if(z=="Standing"){
                         y = 0;
-                        y = y/60
                         c = c+1;
-                        document.getElementById("counter").innerHTML = y;
+                        document.getElementById("counter").innerHTML = e;
                         document.getElementById("standing-counter").innerHTML = c;
                     }
 
-                    if(y==e){
+                    if(y==7200){
                         y= 0;
                         y = y/60
                         document.getElementById("counter").innerHTML = y;
