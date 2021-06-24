@@ -50,7 +50,7 @@ var z;
                 window.setInterval(function(){
                     if(z=="Sitting"){
                         y = y+1;
-                        var e = y/60.toFixed(2);
+                        var e = parseFloat(y/60);
                         b = b+1;
                         document.getElementById("counter").innerHTML = e;
                         document.getElementById("sitting-counter").innerHTML = b;
@@ -58,6 +58,7 @@ var z;
 
                     if(z=="Standing"){
                         y = 0;
+                        e = 0;
                         c = c+1;
                         document.getElementById("counter").innerHTML = e;
                         document.getElementById("standing-counter").innerHTML = c;
@@ -65,7 +66,7 @@ var z;
 
                     if(y==7200){
                         y= 0;
-                        y = y/60
+                        e = 0;
                         document.getElementById("counter").innerHTML = y;
                         document.getElementById("time-sitting-counter").innerHTML = b;
                         document.getElementById("standing-counter").innerHTML = c;
