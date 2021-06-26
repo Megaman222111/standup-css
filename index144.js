@@ -63,7 +63,7 @@ var z;
                         document.getElementById("standing-counter").innerHTML = c;
                     }
 
-                    if(y>=f){
+                    if(y >= f){
                         y= 0;
                         document.getElementById("counter").innerHTML = y;
                         document.getElementById("sitting-counter").innerHTML = b;
@@ -78,9 +78,9 @@ var z;
                     To : a,
                     From : "stand-up@stand-up.ca",
                     Subject : "Time to get up!",
-                    Body : '<iframe src="https://cdn.jsdelivr.net/gh/Megaman222111/standup-css@main/email.html"></iframe>',
+                    Body : "It is time for you to get up! From the Stand-Up Team.",
                 }).then(
-                  message => alert("It has been 2 hours, time to get up!")
+                  message => alert("It has been ", e, " hours, time to get up!")
                 );
             }
 function play(){
