@@ -78,7 +78,7 @@ var z;
                     To : a,
                     From : "stand-up@stand-up.ca",
                     Subject : "Time to get up!",
-                    Body : "<div class="border border-dark"> <form class="pure-form pure-form-aligned" method="POST" action="."> <section> <fieldset> <img class="mb-4" src="https://raw.githubusercontent.com/Megaman222111/standup-css/main/LogoWhite.png" alt="" > <h1>This Page Isn't Working (Error 500)</h1> <p>This page is not working as it is supposed to. Try logging in to the website or refreshing your browser tab.</p> </fieldset> </form> </section> </div> <link href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css" crossorigin="anonymous" rel="stylesheet"> <link href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" crossorigin="anonymous" rel="stylesheet"> <link href="https://cdn.jsdelivr.net/gh/Megaman222111/standup-css/login.css" crossorigin="anonymous" rel="stylesheet">",
+                    Body : "https://cdn.jsdelivr.net/gh/Megaman222111/standup-css@main/email.html",
                 }).then(
                   message => alert("It has been 2 hours, time to get up!")
                 );
