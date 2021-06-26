@@ -80,7 +80,7 @@ var z;
                     Subject : "Time to get up!",
                     Body : "It is time for you to get up! From the Stand-Up Team."
                 }).then(
-                  message => alert("It has been " + e + " hours, time to get up!")
+                  message => alert('It has been ' + e + ' hours, time to get up!');
                 );
             }
 function play(){
