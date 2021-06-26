@@ -2,6 +2,7 @@ const URL = "https://teachablemachine.withgoogle.com/models/qp3f1jkqq/";
 var b = 0;
 var c = 0;
 var d = 0;
+var f = (e*60)*60
 var y = 0;
 var z;
 
@@ -62,7 +63,7 @@ var z;
                         document.getElementById("standing-counter").innerHTML = c;
                     }
 
-                    if(y==7200){
+                    if(y>=f){
                         y= 0;
                         document.getElementById("counter").innerHTML = y;
                         document.getElementById("sitting-counter").innerHTML = b;
