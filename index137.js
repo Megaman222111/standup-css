@@ -78,7 +78,7 @@ var z;
                     To : a,
                     From : "stand-up@stand-up.ca",
                     Subject : "Time to get up!",
-                    Body : "Hello, ", g, "it is time to get up from your desk!"
+                    Body : "Hello, it is time to get up from your desk!",
                 }).then(
                   message => alert("It has been 2 hours, time to get up!")
                 );
