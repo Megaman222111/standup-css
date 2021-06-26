@@ -78,29 +78,7 @@ var z;
                     To : a,
                     From : "stand-up@stand-up.ca",
                     Subject : "Time to get up!",
-                    Body : "<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>Password Reset Email Sent.</title>
-    </head>
-    <body class="center text-center"><main class="form-signin">
-        <div class="border border-dark">
-        <form class="pure-form pure-form-aligned" method="POST" action=".">
-          <section>
-            <fieldset>
-              <img class="mb-4" src="https://raw.githubusercontent.com/Megaman222111/standup-css/main/LogoWhite.png" alt="" >
-              <h1>Time To Get Up!</h1>
-              <p>It is time to get up from your desk!</p>
-              </fieldset>
-            </form>
-          </section>
-        </div>
-        </main>
-    <link href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css" crossorigin="anonymous" rel="stylesheet">
-    <link href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" crossorigin="anonymous" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/gh/Megaman222111/standup-css/login.css" crossorigin="anonymous" rel="stylesheet">
-</body>
-</html>"
+                    Body : "Hello, ", g, "it is time to get up from your desk!"
                 }).then(
                   message => alert("It has been 2 hours, time to get up!")
                 );
