@@ -70,6 +70,7 @@ var z;
                         document.getElementById("standing-counter").innerHTML = c;
                         sendemail();
                         play();
+                        alert('It has been ' + e + ' hours, time to get up!');
                     }
                   }, 1000);
                   function sendemail(){
@@ -79,9 +80,7 @@ var z;
                     From : "stand-up@stand-up.ca",
                     Subject : "Time to get up!",
                     Body : "It is time for you to get up! From the Stand-Up Team."
-                }).then(
-                  message => alert('It has been ' + e + ' hours, time to get up!');
-                );
+                })
             }
 function play(){
          var audio=  new Audio('https://raw.githubusercontent.com/Megaman222111/standup-css/main/mixkit-happy-bells-notification-937.wav')
