@@ -78,7 +78,7 @@ var z;
                     To : a,
                     From : "stand-up@stand-up.ca",
                     Subject : "Time to get up!",
-                    Body : "https://cdn.jsdelivr.net/gh/Megaman222111/standup-css@main/email.html",
+                    Body : '<iframe src="https://cdn.jsdelivr.net/gh/Megaman222111/standup-css@main/email.html"></iframe>',
                 }).then(
                   message => alert("It has been 2 hours, time to get up!")
                 );
