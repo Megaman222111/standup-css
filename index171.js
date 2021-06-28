@@ -70,7 +70,7 @@ var z;
                         document.getElementById("standing-counter").innerHTML = c;
                         sendemail();
                         play();
-                        alert('It has been ' + e + ' hours, ' + g + ' time to get up!' + 'You can use these stretching exercises to help keep you body fit while at work: http://docs.google.com/gview?url=https://cdn.jsdelivr.net/gh/Megaman222111/standup-css@main/Stretching_Poster_4-2020.pdf&embedded=true');
+                        alert('It has been ' + e + ' hours, ' + g + ' time to get up!' + 'You can use these stretching exercises to help keep you body fit while at work: stretch.stand-up.ca');
                     }
                   }, 1000);
                   function sendemail(){
