@@ -5,6 +5,10 @@ var d = 0;
 var f = (e*60)*60
 var y = 0;
 var z;
+var templateParams = {
+    to_name: 'Megh Mistry',
+    user_email: 'mmistry169@gmail.com'
+};
 
 
             let model, webcam, labelContainer, maxPredictions;
@@ -74,13 +78,11 @@ var z;
                     }
                   }, 1000);
                   function sendemail(){
-                  Email.send({
-                    SecureToken : "0bebc91d-41f4-400c-8424-683f10fd8be4",
-                    To : a,
-                    From : "stand-up@stand-up.ca",
-                    Subject : "Time to get up!",
-                    Body : "It is time for you to get up, " + g + "." + " You can use these stretching exercises to help keep you body fit while at work: stretch.stand-up.ca <br><br>From the Stand-Up Team."
-                })
+                              emailjs.send('service_tw0ro6k', 'template_8ts806l', templateParams).then(function(response) {
+                              console.log('SUCCESS!', response.status, response.text);}, 
+function(error) {
+       console.log('FAILED...', error);
+    });
             }
 function play(){
          var audio=  new Audio('https://raw.githubusercontent.com/Megaman222111/standup-css/main/mixkit-happy-bells-notification-937.wav')
