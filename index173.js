@@ -5,11 +5,6 @@ var d = 0;
 var f = (e*60)*60
 var y = 0;
 var z;
-var templateParams = {
-    to_name: 'Megh Mistry',
-    user_email: 'mmistry169@gmail.com'
-};
-
 
             let model, webcam, labelContainer, maxPredictions;
             async function init() {
