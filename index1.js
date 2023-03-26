@@ -73,7 +73,7 @@ var z;
                     }
                   }, 1000);
                   function sendemail(){
-                              emailjs.send('service_eajn9ky', 'template_y2lfizi', templateParams).then(function(response) {
+                              emailjs.send('service_hzmfugp', 'template_y2lfizi', templateParams).then(function(response) {
                               console.log('SUCCESS!', response.status, response.text);}, 
 function(error) {
        console.log('FAILED...', error);
